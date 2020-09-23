@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#000000">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/date_dob"
-        android:text="17/07/2000"
+        android:text="01/01/2000"
         android:drawableRight="@drawable/ic_down"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
@@ -23,6 +24,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textColor="#ff0000"
         android:layout_marginTop="190dp"/>
 
 
@@ -30,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/date_of_find"
-        android:text="23/09/2020"
+        android:text="01/01/2020"
         android:drawableRight="@drawable/ic_down"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
@@ -49,7 +51,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RESULT"
+        android:text="Your Age"
+        android:textColor="#00ff00"
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
@@ -60,9 +63,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="520dp"
-        android:text="DD/MM/YYYY"
+        android:hint="day / month / year"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="#ffffff"
         android:id="@+id/result"/>
 
 </RelativeLayout>

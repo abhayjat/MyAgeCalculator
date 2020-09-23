@@ -10,6 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.joda.time.Period;
+import org.joda.time.PeriodType;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -86,6 +90,20 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     Date date1=simpleDateFormat1.parse(dobdate);
                     Date date2=simpleDateFormat1.parse(todaydate);
+
+                    long startDate=date1.getTime();
+                    long endDate=date2.getTime();
+
+                    if(startDate <= endDate){
+                        Period period=new Period(startDate,endDate,PeriodType.yearMonthDay());
+                        int years=period.getYears();
+                        int months=period.getMonths();
+                        int days=period.getDays();
+
+                        result.setText(years+" Years | "+ months+" Months | "+ days+" Days");
+                    }else{
+                        Toast.makeText(MainActivity.this,"Date of Birth should not Grater then Todays date",Toast.LENGTH_SHORT).show();
+                    }
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
