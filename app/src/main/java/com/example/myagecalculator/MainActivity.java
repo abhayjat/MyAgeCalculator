@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btndob=(Button) findViewById(R.id.date_dob);
+        btndate=(Button) findViewById(R.id.date_of_find);
+        calculate=(Button) findViewById(R.id.btn_calculate);
+
+        result=(TextView) findViewById(R.id.result);
 
     }
 }
