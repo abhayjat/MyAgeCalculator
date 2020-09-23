@@ -12,17 +12,20 @@
         android:layout_height="wrap_content"
         android:id="@+id/date_dob"
         android:text="01/01/2000"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
         android:drawableRight="@drawable/ic_down"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"/>
+        android:layout_marginTop="120dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="To"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="#ff0000"
         android:layout_marginTop="190dp"/>
@@ -36,7 +39,10 @@
         android:drawableRight="@drawable/ic_down"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="260dp"/>
+        android:layout_marginTop="250dp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -52,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your Age"
-        android:textColor="#00ff00"
+        android:textColor="#ff0000"
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
@@ -63,10 +69,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="520dp"
-        android:hint="day / month / year"
-        android:textSize="20sp"
+        android:hint="Years | Months | Days"
+        android:textSize="25sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
+        android:textColor="#ff0000"
+        android:background="#24F1E0"
         android:id="@+id/result"/>
 
 </RelativeLayout>
